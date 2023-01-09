@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import NewArticles from "../components/NewArticles";
 import MainArticle from "../components/MainArticle";
+import NavBar from "../components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,10 +27,15 @@ export default function Home() {
     ];
     return (
         <>
-            <div className={styles.top_section}>
-                <MainArticle />
-                <NewArticles articles={articles} />
-            </div>
+            <header>
+                <NavBar></NavBar>
+            </header>
+            <main>
+                <div className={styles.top_section}>
+                    <MainArticle />
+                    <NewArticles articles={articles} />
+                </div>
+            </main>
         </>
     );
 }

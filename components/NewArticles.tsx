@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/NewArticles.module.css";
 
 export default function NewArticles({ articles }) {
-    const newsItems = articles.map((article) => (
+    const newsItems = articles.map((article, i, { length }) => (
         <>
             <h3 key={article.headline + "headline"} className={styles.headline}>
                 {article.headline}
@@ -10,7 +10,7 @@ export default function NewArticles({ articles }) {
             <p key={article.headline} className={styles.description}>
                 {article.description}
             </p>
-            <hr />
+            {i + 1 < length && <hr />}
         </>
     ));
     return (
