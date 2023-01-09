@@ -1,7 +1,6 @@
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
 }
 
 .img {
@@ -25,8 +24,8 @@
 }
 
 .button_readmore {
-    background-color: hsl(5, 85%, 63%);
-    color: hsl(36, 100%, 99%);
+    background-color: var(--soft-red);
+    color: var(--off-white);
     text-transform: uppercase;
     padding: 0.5em;
     font-weight: 700;

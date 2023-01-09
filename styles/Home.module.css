@@ -1,5 +1,13 @@
 .top_section {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 50px;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .top_section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

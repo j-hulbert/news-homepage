@@ -1,18 +1,32 @@
 .container {
-    background-color: hsl(240, 100%, 5%);
+    background-color: var(--very-dark-blue);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    padding: 25px;
 }
 
 .header {
-    color: hsl(35, 77%, 62%);
+    color: var(--soft-orange);
     font-weight: 900;
     font-size: 2.5rem;
+    justify-self: left;
+    margin-bottom: 15px;
 }
 
 .headline {
-    color: hsl(36, 100%, 99%);
+    color: var(--off-white);
     font-weight: 700;
 }
 
 .description {
-    color: hsl(36, 100%, 99%);
+    color: var(--dark-grayish-blue);
+}
+
+.container hr {
+    border: 0;
+    background-color: var(--dark-grayish-blue);
+    height: 1px;
+    margin: 30px;
+    width: 80%;
 }
